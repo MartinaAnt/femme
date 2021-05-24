@@ -1,0 +1,17 @@
+{
+  "num_mentees": 100,
+  "languages": [
+    "German",
+    "Spanish",
+    "Polish",
+    "Romanian",
+    "Slovak",
+    "Czech",
+    "English"
+  ],
+  "full_names": {
+    "avg_len": 15.08,
+    "longest": "Sumudu Namali Gouri Boyinová",
+    "shortest": "Mako Ueda"
+  }
+}
