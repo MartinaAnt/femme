@@ -1,17 +1,22 @@
 {
   "num_mentees": 100,
   "languages": [
-    "German",
-    "Spanish",
     "Polish",
+    "English",
+    "Spanish",
     "Romanian",
     "Slovak",
     "Czech",
-    "English"
+    "German"
   ],
   "full_names": {
     "avg_len": 15.08,
-    "longest": "Sumudu Namali Gouri Boyinová",
-    "shortest": "Mako Ueda"
+    "longest": [
+      "Sumudu Namali Gouri Boyinová"
+    ],
+    "shortest": [
+      "Mako Ueda",
+      "Ana Kreis"
+    ]
   }
 }

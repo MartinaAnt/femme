@@ -15,17 +15,15 @@ class MenteesReport:
         self.languages = set(self.data.language.unique())
 
         #    - get an average length of mentees full names
-        self.data['full_names'] = self.data['first_name'] + ' ' + self.data['last_name']
-        name_len = self.data.full_names.str.len()
+        self.data['full_name'] = self.data['first_name'] + ' ' + self.data['last_name']
+        name_len = self.data.full_name.str.len()
         self.avg_name_len = name_len.mean()
 
         #    - find mentee with longest full name
-        longest_name_idx = name_len.idxmax()
-        self.longest_name = self.data.loc[longest_name_idx, 'full_names']
+        self.longest_name = self.data[name_len == name_len.max()].full_name.tolist()
 
         #    - find mentee with shortest full name
-        shortest_name_idx = name_len.idxmin()
-        self.shortest_name = self.data.loc[shortest_name_idx, 'full_names']
+        self.shortest_name = self.data[name_len == name_len.min()].full_name.tolist()
 
     #    - save report into .json file containing all the information above
     def report(self):
